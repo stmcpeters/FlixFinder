@@ -80,7 +80,7 @@ function App() {
       const response = await fetch("http://localhost:5001/movies");
       // console.log(response);
       const data = await response.json();
-      setMovies(data);
+      setMovies(data.shows);
     } catch (error) {
       console.error('Error fetching movies: ', error);
     }
